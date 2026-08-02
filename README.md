@@ -171,7 +171,7 @@ If you use this pipeline, please cite the associated study:
 
 ## 📬 Contact
 
-Questions, issues, or suggestions — open an [issue](../../issues) on this repository.
+Questions, issues, or suggestions , open an [issue](../../issues) on this repository!
 
 <div align="center">
 
