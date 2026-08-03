@@ -20,9 +20,9 @@
 
 Transposable elements (TEs) make up nearly **half of the human genome**, yet whether TE-derived sequences embedded in human transcripts are passive evolutionary remnants or **functional RNA/regulatory modules** is still an open question.
 
-This repository contains the analysis code used to intersect **transcribed cis-regulatory elements (tCREs)** — defined from precise, long-read-resolved transcription start sites (CFC-seq) — with **transposable element annotations** (UCSC RepeatMasker), across multiple human cell types (iPSCs, differentiated neurons, THP-1, HEK293).
+This repository contains the analysis code used to intersect **transcribed cis-regulatory elements (tCREs)** — defined from precise, long-read-resolved transcription start sites (CFC-seq) with **transposable element annotations** (UCSC RepeatMasker), across multiple human cell types (iPSCs, differentiated neurons, THP-1, HEK293).
 
-> 🧫 **CFC-seq** combines Cap-trapping and poly(A)-tailing long-read sequencing, enabling unambiguous mapping of highly repetitive TE families that short-read approaches cannot resolve — while preserving full-length transcript architecture across both coding and non-coding models.
+> 🧫 **CFC-seq** combines Cap-trapping and poly(A)-tailing long-read sequencing, enabling unambiguous mapping of highly repetitive TE families that short-read approaches cannot resolve , while preserving full-length transcript architecture across both coding and non-coding models.
 
 <details>
 <summary>📄 <b>Full abstract</b> (click to expand)</summary>
@@ -88,7 +88,7 @@ Rscript TE_CRE_analysis.R <CRE_file.tsv> <rmsk_file.txt.gz>
 Rscript TE_CRE_analysis.R SampleX.CRE.info.p.e.se.tsv rmsk.txt.gz
 ```
 
-Only two arguments, always — the same command runs on **any** cell type / dataset with this file format (iPSC, neuron, THP-1, HEK293, or your own).
+Only two arguments, always the same command runs on **any** cell type / dataset with this file format (iPSC, neuron, THP-1, HEK293, or your own).
 
 > 💡 Run the command from the folder containing `TE_CRE_analysis.R`, or give its full path:
 > ```bash
@@ -136,7 +136,7 @@ Everything is written to `<SampleName>_CRE_TE_output/`:
 
 ## 🎛️ Default parameters
 
-Fixed at the top of the script — edit there if a specific run needs different values:
+Fixed at the top of the script ,edit there if a specific run needs different values:
 
 ```r
 STRAND_MODE      <- "same"   # same | opposite | both
@@ -155,7 +155,7 @@ TE_CLASS_PATTERN <- "^(DNA|LINE|SINE|LTR|RC|Retroposon)\\??$"
 └── README.md           # you are here
 ```
 
-> 🔒 Raw data (`*.tsv`, `rmsk.txt.gz`, `*_CRE_TE_output/`) is intentionally **not** tracked in this repo — see `.gitignore`.
+> 🔒 Raw data (`*.tsv`, `rmsk.txt.gz`, `*_CRE_TE_output/`) is intentionally **not** tracked in this repo , see `.gitignore`.
 
 ---
 
