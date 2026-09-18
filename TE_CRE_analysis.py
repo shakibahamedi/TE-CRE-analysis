@@ -16,12 +16,12 @@ except ImportError:
 
 
 # Change these four names only if your input filenames are different.
-HERE = Path(__file__).parent
-CRE_BED = HERE / "HEK_Neuron_THP1.CRE.coord.bed(6).gz"
-CRE_INFO = HERE / "HEK_Neuron_THP1.CRE.info.p.e.se(6).tsv"
-COUNTS = HERE / "HEK_Neuron_THP1.all.counts(6).tsv"
-RMSK = HERE / "rmsk.txt(10).gz"
-OUTDIR = HERE / "cre_te_results"
+HERE = path(__file__).parent
+CRE_BED = HERE/"bed/HEK_Neuron_THP1.CRE.coord.bed.gz"
+CRE_INFO = HERE/"log/HEK_Neuron_THP1.CRE.info.p.e.se.tsv"
+COUNTS = HERE/"counts/HEK_Neuron_THP1.all.counts.tsv"
+RMSK = "/group/carninci/Shakiba.hamedi/CRE_all/analysis/CRE_all/rmsk.txt.gz"
+OUTDIR = HERE/"cre_te_results"
 
 PREFIXES = (
     ("HEK_", "HEK_RPI"), ("iPSC_", "iPSC"), ("NSC_", "NSC"),
